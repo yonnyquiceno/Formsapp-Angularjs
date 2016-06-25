@@ -12,6 +12,7 @@
   function ($scope, $http, $state, $stateParams, userService, userFactory, toaster, $sessionStorage, $localStorage) {
 
     $scope.user = {}
+    $localStorage.users=[{email:'yonnyquiceno@gmail.com',password:'1234'}];
 
     // Watch verifica cambios en el estado de los objetos y ejecuta acciones
     $scope.$watch(function () { return userFactory.getCurrentUser(); }, function (newValue, oldValue) {
